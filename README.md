@@ -30,4 +30,4 @@
 - Charts
 - React
 
-Check D2L or Drive for more details on each assignment
+### Others Folder Contains the project journal , presentation, book review and project proposal
