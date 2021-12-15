@@ -1,0 +1,349 @@
+.h1 {
+  text-align: center;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for exercise 02-navbar */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+nav ul {
+  border:1px solid black;
+  border-width:1px 0;
+  display: flex;
+  align-items: left; 
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, var(--teal), var(--black));
+}
+nav ul li {
+  display: inline-block;
+  flex: 0 1 auto;
+  list-style-type: none;
+}
+
+nav ul li a{
+  display:inline-block;
+  padding:10px;
+  color: white;
+}
+
+nav ul li a:link {
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  background-color: var(--teal);
+}
+
+nav ul li a:active {
+  text-decoration: none;
+  background-color: var(--teal);
+}
+
+nav ul li a:focus{
+  background-color: rgb(8, 194, 194);
+}
+
+@media screen and (max-width: 768px) {
+  nav ul{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+/* Code for exercise 03-flex */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+.flex-container{
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: column; 
+  justify-content: flex-end;
+}
+.flex-item.item8{
+  order: -2;
+}
+.flex-item.item5{
+  order: -1;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for exercise 04-grid */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+ .grid-container{ 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  background-color: #eff2f5;
+  padding: 10px;
+} 
+
+.grid-item.item1
+{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+ .grid-item.item2
+{
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1; 
+} 
+
+.grid-item.item3
+{
+  grid-column: 3 / span 3;
+  grid-row: 1 / span 3;
+} 
+
+.grid-item.item4
+{
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.grid-item.item5
+{
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+} 
+
+.grid-item.item6
+{
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+} 
+
+.grid-item.item7
+{
+  grid-column: 4 / span 1;
+  grid-row: 4 / span 1;
+} 
+
+.grid-item.item8
+{
+  grid-column: 5 / span 1;
+  grid-row: 4 / span 1;
+} 
+
+.grid-item.item9
+{
+  grid-column: 1 / span 1;
+  grid-row: 5 / span 1;
+} 
+
+.grid-item.item10
+{
+  grid-column: 2 / span 4;
+  grid-row: 5 / span 1;
+} 
+
+@media all and (max-width: 414px) {
+    .grid-container{ 
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      background-color: #eff2f5;
+      padding: 10px;
+    } 
+  
+  .grid-item.item1
+  {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .grid-item.item2
+  {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  } 
+ 
+  .grid-item.item3
+  {
+    display : none;
+  } 
+  
+  .grid-item.item4
+  {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .grid-item.item5
+  {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  } 
+  
+  .grid-item.item6
+  {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  } 
+  
+  .grid-item.item7
+  {
+    display : none;
+  } 
+  
+  .grid-item.item8
+  {
+   display: none;
+  } 
+  
+  .grid-item.item9
+  {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  } 
+  
+  .grid-item.item10
+  {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  }
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for exercise 05-calendar */
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+.h1-calender{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #000;
+  color: white;
+  min-height: 10vh;
+  font-size: 40px;
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.grid-calendar-box ul, ol{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1em;
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 0;
+}
+.grid-calendar-box li{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-left: 0;
+  font-size: larger;
+  text-align: center;
+  align-items: center;
+}
+ul.day-of-the-week {
+  margin-top: 1em;
+  background: white;
+}
+ul.day-of-the-week li {
+  height: 4vw;
+}
+ol.grid-for-date li{
+  background-color: rgb(202, 200, 200);
+  border: 1px solid rgb(202, 200, 200);
+  height: 10vw;
+  max-height: 75px;
+}
+ul.day-of-the-week li {
+  border: none;
+  font-weight: 800;
+  text-decoration: none;
+  background-color: white;
+}
+ol.grid-for-date li:nth-child(1),
+ol.grid-for-date li:nth-child(2),
+ol.grid-for-date li:nth-child(3),
+ol.grid-for-date li:nth-child(35) {
+  background-color: #fff;
+}
+
+@media all and (max-width: 800px) {
+  .h1-for-calendar{
+    font-size: large;
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+  .grid-calendar-box ul, ol{
+    grid-gap: .30em;
+  }
+  ul.day-of-the-week li{
+    font-size: smaller;
+  }
+}
+.grid-for-date li:hover{
+  background-color:rgb(107, 104, 104);
+}
+
+@media all and (max-width: 746px) {
+  .h1-calender{
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 380px) {
+  .h1-calender{
+    font-size: 15px;
+  } 
+}
+
+@media all and (max-width: 280px) {
+  .h1-calender{
+    font-size: 10px;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* Code for exercise 06-bootstrap-grid */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+.row:nth-child(1) {
+  background-color: var(--purple);
+}
+
+.row:nth-child(2) > *{
+  background-color: var(--navy);
+}
+.row:nth-child(3){
+  background-color: var(--teal);
+}
+.row:nth-child(4) > *{
+  background-color: var(--green);
+}
+.row > *{
+  height: 80px;
+  border: 1px solid white;
+}
