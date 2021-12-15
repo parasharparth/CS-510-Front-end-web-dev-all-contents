@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+/* search route css */
+
+button.search-btn{
+  font-weight: bold;
+  background-color: rgba(0, 0, 255, 0.8);
+   border: none;
+   width: 30%;
+}
+
+@media(min-width: 1024px){
+  div.search-container{
+    width:50%;
+  }
+}
+@media(max-width:414px) {
+  button.search-btn{
+    width: 70%;
+}
+}
+
+/* houses css */
+
+.a-link{
+  color: white;
+  font-weight: bold;
+}
+
+.a-link:active, .a-link:hover{
+  text-decoration: underline;
+  background-color: white;
+  color: black;
+  padding: 10px 10px;
+}
+
+@media (min-width:990px){
+div.houses-container{
+  max-width: 720px  !important;
+}
+div.houses-container > canvas{
+  height:688px  !important;
+  width:688px   !important;
+}
+}
+
+
+/* navbar css */
+
+nav-p{
+  font-weight: bold;
+}
+
+/* home page css */
+
+div.welcome-msg{
+  padding-top: 50px;
+}
+
+/* css for result pic */
+
+img.img-pic{
+  width:250px;
+  height:250px;
+}
