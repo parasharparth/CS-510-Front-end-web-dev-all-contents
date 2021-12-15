@@ -1,0 +1,55 @@
+/* Add your code here */
+figure {
+    width: 25%;
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
+img {
+    max-width: 320px;
+    max-height: 320px;
+}
+
+figcaption {
+    color: black;
+    font: smaller sans-serif;
+    padding: 3px;
+    text-align: bottom;
+}
+
+#two
+{
+    filter: grayscale();
+}
+
+#three
+{
+    filter: blur(2px);
+}
+
+#four
+{
+    filter:invert()
+}
+
+#five
+{
+    filter:brightness(1.75);
+}
+
+#six
+{
+    filter: saturate(3);
+}
+
+#seven
+{
+    filter:sepia();
+}
+
+#eight
+{
+    filter:blur(1px) grayscale(1) saturate(3) brightness(1.75);
+}
