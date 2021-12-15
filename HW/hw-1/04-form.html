@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Exercise</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="04-form.css" />
+  </head>
+  <body>
+    <main role="main">
+        <form id="form" action="#">
+          <caption class="form-head"><h1>INTRO SURVEY</h1></caption>
+
+          <div class="userName">
+            <label for="userName"><b>Name <span class="required">(required)</span></b></label><br/>
+            <input type="text" name="userName" id="userName" class="input-box" required />
+          </div>
+
+          <div class="email">
+            <label for="email"><b>Email <span class="required">(required)</span></b></label><br>
+            <input type="email" name="email" id="email" class="input-box" required />
+          </div>
+
+          <div class="reg-status">
+            <label for="reg-status"><b>Registration Status</b></label><br />
+            <select name="reg-status" id="reg-status" class="select-box">
+              <option value="">choose an option</option>
+              <option value="Yes">Already Registered</option>
+              <option value="No">Not yet registered</option>
+            </select>
+          </div>
+
+          <div class="class-section">
+            <fieldset>
+              <legend for="class-section"><b>Class Section</b></legend>
+              <input type="radio" id="CS_410P" name="class-section" value="CS 410P"></input>
+              <label for="CS_410P">CS 410P</label>
+              <input type="radio" id="CS_510" name="class-section" value="CS 510"></input>
+              <label for="CS_510">CS 510</label>
+            </fieldset>
+          </div>
+
+          <div class="other">
+            <fieldset>
+              <legend for="other_course"><b>Have you taken any of the following courses?</b></legend>
+              <input type="checkbox" id="prog-lang" name="prog-lang" value="Programming languages"></input>
+              <label for="prog-lang">Programming languages</label> <br>
+              <input type="checkbox" id="os" name="os" value="Operating Systems"></input>
+              <label for="os">Operating Systems</label> <br>
+              <input type="checkbox" id="full-stack" name="full-stack" value="Full Satck Web Development"></input>
+              <label for="full-stack">Full Stack Web Development</label>
+            </fieldset>
+          </div>
+
+          <div class="anything">
+            <label for="anything"><b>Anything else?</b></label><br>
+            <textarea id="anything" class="input-box" name="anything" rows="4" cols="33">
+            </textarea>
+          </div>
+
+          <div class="buttons">
+            <input type="submit" value="Submit" id="submit" class="button" />
+            <input type="reset" value="Reset" id="reset" class="button" />
+          </div>
+
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
